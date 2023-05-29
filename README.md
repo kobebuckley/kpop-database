@@ -44,8 +44,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 **** 
 
 Image Credits
+https://github.com/AntonioErdeljac/next13-airbnb-clone
 
-Photo by <a href="https://unsplash.com/@rexcuando?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric Nopanen</a> on <a href="https://unsplash.com/images/things/music?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
 
 **** 
