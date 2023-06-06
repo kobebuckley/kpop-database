@@ -2,20 +2,20 @@
 
 import { usePathname, useSearchParams } from 'next/navigation';
 import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
-import { 
-  GiBarn, 
-  GiBoatFishing, 
-  GiCactus, 
-  GiCastle, 
-  GiCaveEntrance, 
-  GiForestCamp, 
-  GiIsland,
-  GiWindmill
-} from 'react-icons/gi';
-import { FaSkiing } from 'react-icons/fa';
-import { BsSnow } from 'react-icons/bs';
-import { IoDiamond } from 'react-icons/io5';
-import { MdOutlineVilla } from 'react-icons/md';
+// import { 
+//   GiBarn, 
+//   GiBoatFishing, 
+//   GiCactus, 
+//   GiCastle, 
+//   GiCaveEntrance, 
+//   GiForestCamp, 
+//   GiIsland,
+//   GiWindmill
+// } from 'react-icons/gi';
+// import { FaSkiing } from 'react-icons/fa';
+import { BsFillFileMusicFill, BsSnow } from 'react-icons/bs';
+// import { IoDiamond } from 'react-icons/io5';
+import { MdLibraryMusic, MdOutlineVilla } from 'react-icons/md';
 
 import CategoryBox from "../CategoryBox";
 import Container from '../Container';
@@ -24,77 +24,77 @@ import Container from '../Container';
 export const categories = [
   {
     label: 'Twice',
-    icon: TbBeach,
+    icon: MdLibraryMusic,
     description: 'Twice Group!',
   },
   {
     label: 'Itzy',
-    icon: GiWindmill,
+    icon: MdLibraryMusic,
     description: 'Itzy Group!',
   },
   {
     label: 'Fifty-Fifty',
-    icon: MdOutlineVilla,
+    icon: MdLibraryMusic,
     description: 'Fifty-Fifty Group!'
   },
   {
     label: 'XG',
-    icon: TbMountain,
+    icon: MdLibraryMusic,
     description: 'XG Group!'
   },
   {
     label: '2pm',
-    icon: TbPool,
+    icon: MdLibraryMusic,
     description: '2pm Group!'
   },
   {
     label: 'Le Sserafim',
-    icon: GiIsland,
+    icon: MdLibraryMusic,
     description: 'Le Sserafim Group!'
   },
   {
     label: 'BlackPink',
-    icon: GiBoatFishing,
+    icon: MdLibraryMusic,
     description: 'BlackPink Group!'
   },
   {
     label: 'NCT U',
-    icon: FaSkiing,
+    icon: MdLibraryMusic,
     description: 'NCT U Group!'
   },
   {
     label: '(G) I-DLE',
-    icon: GiCastle,
+    icon: MdLibraryMusic,
     description: '(G) I-DLE Group!'
   },
   {
     label: 'Trouble Maker',
-    icon: GiCaveEntrance,
+    icon: MdLibraryMusic,
     description: 'Trouble Maker Group!'
   },
   {
     label: 'Block B',
-    icon: GiForestCamp,
+    icon: MdLibraryMusic,
     description: 'Block B Group!'
   },
   {
     label: 'EXID',
-    icon: BsSnow,
+    icon: MdLibraryMusic,
     description: 'EXID Group!'
   },
   {
     label: 'C.N Blue',
-    icon: GiCactus,
+    icon: MdLibraryMusic,
     description: 'C.N Blue Group!'
   },
   {
     label: 'GOT7',
-    icon: GiBarn,
+    icon: MdLibraryMusic,
     description: 'GOT7 Group!'
   },
   {
     label: 'Loona',
-    icon: IoDiamond,
+    icon: MdLibraryMusic,
     description: 'Loona Group!'
   }
 ]
