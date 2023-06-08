@@ -10,6 +10,7 @@ import CategoryInput from "../inputs/Categoryinputs"
 import { FieldValues, useForm } from "react-hook-form"
 import CountrySelect from "../inputs/CountrySelect"
 import dynamic from "next/dynamic"
+import Counter from "../inputs/Counter"
 
 enum STEPS {
     CATEGORY = 0,
@@ -39,7 +40,7 @@ const RentModal = () => {
         defaultValues: {
             category: '',
             location: null,
-            yearSinceDebutCount: 1,
+            trainingCount: 1,
             memberCount: 1, 
             songCount: 1,
             imageSrc: '',
@@ -51,6 +52,9 @@ const RentModal = () => {
 
     const category = watch('category');
     const location = watch('location');
+    const trainingCount = watch('trainingCount');
+    const memberCount = watch('memberCount');
+    const songCount = watch('songCount');
 
     const Map = useMemo(() => dynamic(() => import('../Map'), { 
         ssr: false 
@@ -125,7 +129,7 @@ const RentModal = () => {
         bodyContent = ( 
             <div className="flex flex-col gap-8">
                 <Heading
-                  title="What country was your memeber born in?"
+                  title="What country was your member born in?"
                   subtitle="Help fans find your member profile!" 
                 />
                 <CountrySelect
@@ -138,6 +142,43 @@ const RentModal = () => {
             </div>
         )
     }
+
+
+    if ( step === STEPS.INFO) {
+        bodyContent = (
+            <div className="flex flex-col gap-8">
+                <Heading
+                  title="Share some basic info about your member"
+                  subtitle="Please use the Plus and Minus buttons" 
+                />
+                <Counter 
+                  title="Training"
+                  subtitle="How many months of training did they have?"
+                  value={trainingCount}
+                  onChange={(value) => setCustomValue('trainingCount', value)}
+                  />
+                  <hr />
+        
+                <Counter 
+                  title="Fellow Members"
+                  subtitle="How many other members are in their group??"
+                  value={memberCount}
+                  onChange={(value) => setCustomValue('memberCount', value)}
+                  />
+                  <hr />
+   
+                <Counter 
+                  title="Songs"
+                  subtitle="How many songs are they a part of?"
+                  value={songCount}
+                  onChange={(value) => setCustomValue('songCount', value)}
+                  />
+                  <hr />
+            </div>
+        )
+    }
+
+
 
     return (
         <Modal 
